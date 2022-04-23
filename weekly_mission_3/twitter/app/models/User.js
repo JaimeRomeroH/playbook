@@ -1,5 +1,5 @@
-class User{
-    constructor(id, username, name, bio, dateCreated, lastUpdated){
+class User {
+    constructor (id, username, name, bio, dateCreated, lastUpdated) {
         this.id = id;
         this.username = username;
         this.name = name;
@@ -8,3 +8,5 @@ class User{
         this.lastUpdated = lastUpdated; 
     }
 }
+
+module.exports = User
