@@ -20,6 +20,8 @@ class UserService{
       return [user1.username, user2.username, user3.username]
 
     }
+
+    
 }
 
 module.exports = UserService;
