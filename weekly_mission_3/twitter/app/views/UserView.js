@@ -9,6 +9,9 @@ class UserView{
            typeof(payload.id) !== 'number')){
             return {error: "necesita tener un valor válido"}
         }
+        else{
+            return {name:`${payload.name}`, username:`${payload.username}`, id: payload.id}
+        }
         
     }
 }
