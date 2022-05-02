@@ -7,7 +7,7 @@ app.use(express.json()) // Indicamos que usaremos JSON
 const port = 3000
 
 app.get('/v1/explorers', (req, res) => {
-    console.log(`Api explorers GET ALL request ${newDate()}`)
+    console.log(`Api explorers GET ALL request ${new Date()}`)
     const explorer1 = {id: 1, name: "Jaime1"}
     const explorer2 = {id: 2, name: "Jaime2"}
     const explorer3 = {id: 3, name: "Jaime3"}
