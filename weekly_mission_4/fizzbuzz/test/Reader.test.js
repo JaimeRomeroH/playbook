@@ -1,4 +1,4 @@
-const Reader = require('./../Reader');
+const Reader = require('../lib/utils/Reader');
 
 describe("Unit Tests for Reader Class", () => {
     test('Test 1: Unit Tests for Reader Class', () => {
