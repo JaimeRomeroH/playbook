@@ -9,6 +9,12 @@ class ExplorerService{
         return usernamesInNode
         
     }
+
+    static getAmountOfExplorersByMission(explorers , mission){
+        
+        const amount = explorers.filter((explorer) => explorer.mission == `${mission}`)
+        return amount.length
+    }
    
 }
 
