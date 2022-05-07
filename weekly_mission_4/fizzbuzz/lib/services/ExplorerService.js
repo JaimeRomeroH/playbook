@@ -3,9 +3,9 @@ class ExplorerService{
     static filterByMission(explorers, mission){
         
         
-        const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == `${mission}`);
-        const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-        return usernamesInNode
+        const explorersByMission = explorers.filter((explorer) => explorer.mission == `${mission}`);
+        
+        return explorersByMission
         
     }
 
@@ -14,6 +14,8 @@ class ExplorerService{
         const amount = explorers.filter((explorer) => explorer.mission == `${mission}`)
         return amount.length
     }
+
+    
 
    
    
