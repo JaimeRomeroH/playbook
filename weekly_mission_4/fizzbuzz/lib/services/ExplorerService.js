@@ -1,10 +1,9 @@
 const Reader = require('../utils/Reader');
 class ExplorerService{
     static filterByMission(explorers, mission){
-        this.explorers = explorers
-        this.mission = mission
         
-        const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
+        
+        const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == `${mission}`);
         const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
         return usernamesInNode
         
@@ -15,6 +14,8 @@ class ExplorerService{
         const amount = explorers.filter((explorer) => explorer.mission == `${mission}`)
         return amount.length
     }
+
+   
    
 }
 
