@@ -15,7 +15,13 @@ class ExplorerService{
         return amount.length
     }
 
-    
+    static getExplorersUserNamesByMission(explorers , mission){
+        
+        const explorersToGetUsernames = explorers.filter((explorer) => explorer.mission == `${mission}`);
+        const usernames = explorersToGetUsernames.map((explorer) => explorer.githubUsername); 
+        return usernames  
+    }
+
 
    
    
