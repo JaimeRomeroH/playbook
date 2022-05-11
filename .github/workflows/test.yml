@@ -1,6 +1,9 @@
 name: Run Tests in my project every push on GitHub
 
-on: [push]
+on: 
+  push:
+    paths:
+       - 'weekly_mission_4/fizzbuzz/**' 
 
 jobs:
   build:
